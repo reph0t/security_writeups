@@ -39,7 +39,7 @@ This lab's error message is visually identical across every response, so compari
 - In the dialog, I scrolled through a sample response to find the error message `Invalid username or password.` and highlighted its text content. Burp automatically configured the extraction settings based on the highlighted text.
 - I clicked **OK**, then started the attack.
 
-![[Pasted image 20260824114133.png]]
+<img width="492" height="452" alt="image" src="https://github.com/user-attachments/assets/90ecc0dc-eed3-4014-ba6d-7af0bb536fcc" />
 
 ### Identifying the Valid Username
 
@@ -48,9 +48,9 @@ This lab's error message is visually identical across every response, so compari
 - Looking closer, the odd-one-out response contained a **typo**: instead of ending in a full stop/period, it had a **trailing space**. This is a classic example of a difference that's invisible when rendered on the page but detectable at the raw response level.
 - I noted the username associated with this response.
 
-![[Pasted image 20260824112443.png]]
+<img width="1418" height="220" alt="image" src="https://github.com/user-attachments/assets/e24ce6b8-361d-4218-b17d-463f3f17af5f" />
 
-![[Pasted image 20260824112410.png]]
+<img width="1150" height="464" alt="image" src="https://github.com/user-attachments/assets/216383a5-bcbd-4139-8a00-9008a5955ce1" />
 
 ### Brute-Forcing the Password
 
@@ -60,18 +60,22 @@ This lab's error message is visually identical across every response, so compari
     username=puppet&password=§invalid-password§
     ```
 
-![[Pasted image 20260824112507.png]]
+<img width="1111" height="526" alt="image" src="https://github.com/user-attachments/assets/d0fad88d-1c67-42a4-a2a0-1217035b7e18" />
+
 - In the **Payloads** side panel, I replaced the username list with the list of candidate passwords and started the attack.
 
-![[Pasted image 20260824112522.png]]
+<img width="456" height="451" alt="image" src="https://github.com/user-attachments/assets/9d655bd6-eb3e-4325-901e-5b4c44586fc9" />
+
 - Once finished, I checked the **Status** column and found one request that returned a `302` response instead of the usual `200` — indicating a successful login. I noted the corresponding password.
     
 
-![[Pasted image 20260824112544.png]]
+<img width="1137" height="676" alt="image" src="https://github.com/user-attachments/assets/1423d138-243e-4695-85ea-2175380d5aa8" />
+
 ### Solving the Lab
 
 - I logged in using the identified username and password, and successfully accessed the user account page, solving the lab.
-![[Pasted image 20260824112606.png]]
+
+<img width="1789" height="915" alt="image" src="https://github.com/user-attachments/assets/6cf40647-d6dd-4194-942a-03e9fbb8ae14" />
 
 ---
 
@@ -100,5 +104,6 @@ Successfully identified a valid username by extracting and comparing the error m
 
 _Lab status: Solved ✅_
 
-_Note: It's also possible to brute-force this login using a single Cluster Bomb attack (usernames × passwords simultaneously). However, enumerating a valid username first — as done above — is significantly more efficient, since it turns a two-variable brute-force problem into two much smaller single-variable ones._
+> [!note] Note
+> _It's also possible to brute-force this login using a single Cluster Bomb attack (usernames × passwords simultaneously). However, enumerating a valid username first — as done above — is significantly more efficient, since it turns a two-variable brute-force problem into two much smaller single-variable ones.
 
