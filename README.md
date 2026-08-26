@@ -11,8 +11,10 @@ A collection of my write-ups from hands-on web security training and real-world 
 Write-ups from PortSwigger's Web Security Academy labs, organized by vulnerability class.
 
 ### Authentication
-- [ ] Coming soon
-
+- Username enumeration via Different Responses
+- Username enumeration via Response Timing
+- Username Enumeration via Subtly Different Responses
+  
 ### SQL Injection
 - [ ] Coming soon
 
