@@ -6,7 +6,7 @@ A collection of my write-ups from hands-on web security training and real-world 
 
 ---
 
-## 📚 Web Academy (PortSwigger)
+## 📚 Web Academy
 
 Write-ups from PortSwigger's Web Security Academy labs, organized by vulnerability class.
 
