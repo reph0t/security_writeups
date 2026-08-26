@@ -102,7 +102,3 @@ _Lab status: Solved ✅_
 
 _Note: It's also possible to brute-force this login using a single Cluster Bomb attack (usernames × passwords simultaneously). However, enumerating a valid username first — as done above — is significantly more efficient, since it turns a two-variable brute-force problem into two much smaller single-variable ones._
 
-
-username: puppet
-password: ginger
-
