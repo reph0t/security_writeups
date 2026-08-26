@@ -40,6 +40,7 @@ This lab's error message is visually identical across every response, so compari
 - I clicked **OK**, then started the attack.
 
 ![[Pasted image 20260824114133.png]]
+
 ### Identifying the Valid Username
 
 - Once the attack finished, the results table included an additional column showing the extracted error message text for each response.
