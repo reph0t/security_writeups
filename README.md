@@ -36,9 +36,9 @@ Findings from public bug bounty programs, published where permitted under progra
 
 ## 🚩 CTF
 
-Write-ups from CTF challenges (optional, add as needed).
+Write-ups from CTF challenges
 
-- [ ] Coming soon
+- [ ] overthewire-bandit
 
 ---
 
