@@ -54,6 +54,7 @@ When I attempted to brute-force the password for the identified username, the ap
 
 <img width="322" height="457" alt="image" src="https://github.com/user-attachments/assets/fa5153e9-749c-4e33-b006-0199802cd770" />
 - **Payload set 2** (`X-Forwarded-For`): the **Numbers** payload type, generating a unique sequential value per request (e.g., 1, 2, 3...) so each login attempt appeared to originate from a different IP address, preventing the block from ever accumulating enough failed attempts against a single source.
+
 <img width="332" height="406" alt="image" src="https://github.com/user-attachments/assets/5137ba3a-7c0b-4bdf-8f7a-c39278f0e91a" />
 
 
