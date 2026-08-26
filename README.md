@@ -1,4 +1,4 @@
-# Web Security Write-ups
+# Security Write-ups
 
 A collection of my write-ups from hands-on web security training and real-world bug bounty findings, documenting vulnerability classes, exploitation methodology, and remediation.
 
