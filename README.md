@@ -14,6 +14,9 @@ Write-ups from PortSwigger's Web Security Academy labs, organized by vulnerabili
 - Username enumeration via Different Responses
 - Username enumeration via Response Timing
 - Username Enumeration via Subtly Different Responses
+
+### Path Traversal
+- File path traversal, simple case
   
 ### SQL Injection
 - [ ] Coming soon
