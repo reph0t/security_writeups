@@ -33,7 +33,7 @@ This lab contains a path traversal vulnerability in the display of product image
 ### Testing for Path Traversal
 
 - I selected one of the image requests, right-clicked, and sent it to **Burp Repeater**.
-- The request's `filename` parameter (`GET /image?filename=<name>.jpg`) was the injection point to test. Since the images are known to be stored in `/var/www/images/`, the goal was to traverse upward out of that directory to reach the filesystem root, then access `/etc/passwd`.
+- The request's `filename` parameter (`GET /image?filename=46.jpg`) was the injection point to test. Since the images are known to be stored in `/var/www/images/`, the goal was to traverse upward out of that directory to reach the filesystem root, then access `/etc/passwd`.
 - I modified the `filename` parameter to:
     
     ```
